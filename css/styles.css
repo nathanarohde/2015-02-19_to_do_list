@@ -1,0 +1,30 @@
+/*#show-tasks {
+  display: none;
+}*/
+
+.contact {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.contact:hover {
+  text-decoration: underline;
+}
+
+#uncompleted {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.uncompleted:hover {
+  text-decoration: underline;
+}
+
+.show-tasks {
+  display: none;
+}
+
+#lists {
+  cursor: pointer;
+  color: #0088cc;
+}
