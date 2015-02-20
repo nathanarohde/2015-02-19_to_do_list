@@ -9,9 +9,9 @@ var currentTask;
 
     $('.list').last().click(function() {
       currentList = newList;
-
       $('.show-tasks').show();
       $("ul#uncompleted").empty();
+
       // $("ul#completed").empty();
       $('#task_name').text(currentList.listName);
         currentList.tasks.forEach(function(task) {
@@ -23,6 +23,7 @@ var currentTask;
 
         // unbind other submit events from form#new-task
         $("form#new-task").submit(function(event) {
+          event.stopImmediatePropagation();
           event.preventDefault();
           var inputtedDescription = $("input#new-description").val();
           currentTask = { descript: inputtedDescription};
